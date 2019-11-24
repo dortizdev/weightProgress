@@ -1,0 +1,66 @@
+<!doctype html>
+<html>
+<head>
+    <title>Workout Progress Tracker</title>
+    <link rel="stylesheet" href="//stackpath.bootstrapcdn.com/bootswatch/4.3.1/cyborg/bootstrap.min.css">
+    <link rel="stylesheet" href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="container">
+
+    <div class="page-header text-center">
+        <h1><span class="fa fa-balance-scale"></span>Profile Page</h1>
+        <a href="/logout" class="btn btn-default btn-sm">Logout</a>
+    </div>
+
+    <div class="row">
+
+        <!-- LOCAL INFORMATION -->
+        <!-- <div class="col-sm-6">
+            <div class="well">
+                <h3><span class="fa fa-user"></span> Local</h3>
+
+                <% if (user.local.email) { %>
+                    <p>
+                        <strong>id</strong>: <%= user._id %><br>
+                        <strong>email</strong>: <%= user.local.email %><br>
+                        <strong>password</strong>: <%= user.local.password %>
+                    </p>
+
+                    <a href="/unlink/local" class="btn btn-default">Unlink</a>
+                <% } else { %>
+                    <a href="/connect/local" class="btn btn-default">Connect Local</a>
+                <% } %>
+
+            </div>
+        </div> -->
+
+        <h2>Add an item</h2>
+
+        <form action="/up" enctype="multipart/form-data" method="POST">
+          <input type="date" placeholder="Date" name="item">
+          <input type="text" placeholder="note" name="note">
+          <input type="file" placeholder="picture" name="pic">
+          <button type="submit">Submit</button>
+        </form>
+
+        <div class="col-sm-6">
+          <h3>List (<%= messages.length %>)</h3>
+          <ul class="messages">
+            <!-- <%= messages %> -->
+          <% for(var i=0; i<messages.length; i++) {%>
+            <li class="message">
+              <img src="<%= messages[i].pic %>" />
+              <span><%= messages[i].item %></span>
+              <span><%= messages[i].note %></span>
+            </li>
+          <% } %>
+          </ul>
+
+</div>
+
+<script src="main.js"></script>
+
+</body>
+</html>

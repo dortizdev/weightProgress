@@ -1,0 +1,96 @@
+/* body{
+  padding-top:80px;
+  word-wrap:break-word;
+  font-size: 10px;
+  background-image: url(sav.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  height: 1200px;
+} */
+
+body:after{
+  padding-top:80px;
+  word-wrap:break-word;
+  font-size: 10px;
+  background-image: url(sav.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  height: 1200px;
+  content : "";
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity : 0.7;
+  z-index: -1;
+}
+
+.well{
+  font-size: 2rem;
+  word-wrap: break-word;
+}
+
+/* .well h3{
+  color: #000;
+} */
+
+.jumbotron{
+  background: none;
+}
+
+h1{
+  font-size: 5rem;
+}
+
+.jumbotron h1{
+  font-size: 8rem;
+}
+
+.jumbotron, h2, h3{
+  font-size: 4rem;
+  font-weight: bold;
+}
+
+.jumbotron p{
+  margin-top: 20px;
+}
+
+form{
+  font-size: 2.5rem;
+}
+
+img{
+  height: 200px;
+  width: 200px;
+}
+
+/* ul{
+  border: 1px solid black;
+  color: #000;
+} */
+
+li, input{
+  font-size: 2.4rem;
+}
+
+button{
+  margin-top: 10px;
+  font-size: 2rem;
+}
+
+p{
+  font-size: 2rem;
+}
+
+.align-left {
+  width: 100%;
+  text-align: left;
+}
+
+.carForm {
+  margin-top: 120px;
+}
