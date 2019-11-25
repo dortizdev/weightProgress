@@ -1,17 +1,14 @@
-# 21 Savage App Login Page
-Leave a message for 21 Savage, the one with the most thumbs up will be the favorite.
-
-<img width="1440" alt="Screen Shot 2019-11-17 at 12 59 10 PM" src="https://user-images.githubusercontent.com/55306344/69011578-1dbe8600-093a-11ea-9f61-5c3667a4f53e.png">
-
+# weightTracker
+<img width="1436" alt="Screen Shot 2019-11-24 at 7 28 20 PM" src="https://user-images.githubusercontent.com/55306344/69504423-ac11a980-0ef0-11ea-86ab-9d7d84153822.png">
 
 
 ## How It's Made:
-**Tech used:** HTML, CSS, JavaScript, NodeJS, Express, EJS, MongoDB
-HTML and CSS are simple, but care had to be placed in ensuring the routes were properly annotated for the data to be sent to the database.
+**Tech used:** HTML, CSS, JavaScript, NodeJS, Passport, Express, EJS, MongoDB
+Important aspects are on the backend and profile page. This app allows the user to track their weight loss journey by adding pictures along with their weight on that date. Added functionality needed to be added to the routes file to ensure only profile specific info was displayed.
+
 
 ## Lessons Learned
-Sometimes all it takes is for a simple small typo to ruin everything. The path/routes names are very sensitive and need to be properly put in. Failure to do so would send an error to the client device. It could also prevent any posting of data to the database.
-
+Learned how to added images to profile using file path. Also learned to make displayed info specific to the users profile page and not displayed to all users.
 
 
 ## Installation
